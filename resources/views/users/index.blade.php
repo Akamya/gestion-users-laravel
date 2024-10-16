@@ -1,6 +1,10 @@
 <x-app-layout>
-
-<a href="{{ route('users.create') }}">Ajout</a>
+    <div class="mb-4">
+        <a href="{{ route('tasks.index') }}">Mes tâches</a>
+    </div>
+    <div class="mb-4 ">
+        <a href="{{ route('users.create') }}">Ajouter un utilisateur</a>
+    </div>
 
 <form action="{{ route('users.index') }}" method="GET" class="mb-4">
     <div class="flex items-center">
